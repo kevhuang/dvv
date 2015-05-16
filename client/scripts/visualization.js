@@ -200,7 +200,8 @@ var displayCompletion = function(results){
       });
 
     // Display thumbnail of the modified image in the left sidebar
-    d3.select('.modified-image').style('display', 'block');
+    d3.select('.modified-image').classed({'show': true, 'hidden': false});
+    d3.select('.modified-image a').append('img').attr('src', 'img/results.jpg');
   }
 };
 
