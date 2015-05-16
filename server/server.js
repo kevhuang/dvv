@@ -14,7 +14,7 @@ var init = function(dataArray, width, height){
     staticPath: '/../client',
     timeout: 25000,
     data: dataArray,
-    partitionLength: 32,
+    partitionLength: 10000,
     width: width,
     height: height,
     func: findColor,
@@ -77,4 +77,4 @@ var findColor = function () {
   return resultsArray;
 };
 
-imageUtils.createDataArrayFromJpegFile(__dirname + '/assets/rgb.jpg', init);
+imageUtils.createDataArrayFromJpegFile(__dirname + '/assets/cereal.jpg', init);

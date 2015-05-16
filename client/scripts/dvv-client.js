@@ -3,7 +3,7 @@ var connectedClients;
 var socket;
 var func;
 
-var NUMBER_OF_WORKERS = 1;
+var NUMBER_OF_WORKERS = 5;
 
 var ON_DATA = function(data){
   console.log(data);

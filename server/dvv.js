@@ -226,7 +226,13 @@ dvv.start = function(){
         }
 
         //Set callback funcrion using dvv.config to perform operations on the finished results
-        var results =  callback(finishedResults, IMAGE_WIDTH, IMAGE_HEIGHT);
+        // console.log('FINISHED RESULTS:', finishedResults);
+        var concatResults = [];
+        for (var i=0; i<finishedResults.length; i++){
+          concatResults = concatResults.concat(finishedResults[i]);
+        }
+        // var results =  callback(finishedResults[0].concat(finishedResults[1]), IMAGE_WIDTH, IMAGE_HEIGHT);
+        var results =  callback(concatResults, IMAGE_WIDTH, IMAGE_HEIGHT);
 
 				// Reformat the scores to be an array of objects.
 				var scoresArr = [];
