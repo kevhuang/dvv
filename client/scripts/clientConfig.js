@@ -4,7 +4,7 @@ dvvClientConfig({
   "onProgress": updateProgress, // update progess meter
   "onEndProgress": stopAnim,
   "onResults": displayCompletion, // display final results
-  "numberOfWorkers": 1
+  "numberOfWorkers": 3
 });
 
 dvvClientStart();

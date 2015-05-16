@@ -14,7 +14,7 @@ var init = function(dataArray, width, height){
     staticPath: '/../client',
     timeout: 25000,
     data: dataArray,
-    partitionLength: 10000,
+    partitionLength: 1000,
     width: width,
     height: height,
     func: findColor,
