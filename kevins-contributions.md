@@ -1,0 +1,3 @@
+- Implemented functionality to display D3 bubble chart visualization of stats (client/scripts/visualization.js line 107 `displayCompletion` function)
+- Displayed thumbnail of the completed image upon finish using D3 (client/scripts/visualization.js lines 203 and 204)
+- Added styling for the above features (client/styles/styles.css lines 77–104)
